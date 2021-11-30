@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav>
+       
+        
+        <div class="menubar">
+            <img class="logo" src="2.png" width="150px" alt="">
+            <!-- <input class="input1" type="text" name="" id="" placeholder="Select Category"> -->
+            
+            <select class="input1" name="Select Category" id="cars" >
+              <option value="Select Category">Select Category</option>
+              <option value="All Category">All Category</option>
+              <option value="Jwellery">Jwellery</option>
+              <option value="Mens Jwellery">Mens Jwellery</option>
+              <option value="Accessories">Accessories</option>
+              <option value="Combos">Combos</option>
+              <option value="Personal Protection">Personal Protection</option>
+              
+            </select>
+            <input class="input2"type="text" name="" id="" placeholder="Search">
+            <span><i class="fas search fa-search"></i></span>
+            <ul class="menu">
+                <li>ENGLISH</li>
+                <li>INR</li>
+                <li>BLOG</li>
+                <li>SHOP</li>
+                <li>HELP CENTER</li>
+
+            </ul>
+        </div>
+        <div class="menubar2">
+            <ul class="ul1">
+                <li onmouseenter="HoverFirst(this)"  id="list1">Women</li>
+                <li onmouseenter="HoverFirst(this)"  id="list2">Men</li>
+                <li onmouseenter="HoverFirst(this)"  id="list3">Collections</li>
+                <li onmouseenter="HoverFirst(this)"  id="list4">LookBook</li>
+                <li onmouseenter="HoverFirst(this)"  id="list5">Accessories</li>
+                <li onmouseenter="HoverFirst(this)"  id="list6">Gifts</li>
+                <li onmouseenter="HoverFirst(this)"  id="list7">Unboxed</li>
+            </ul>
+            <ul class="ul2">
+                <li><i class="fas iuser fa-heart"> WishList</i></li>
+                <li><i class="fas iuser fa-cart-plus"> Cart</i></li>
+                <li><i class="fas iuser fa-user"></i> Account</li>
+
+            </ul>
+        </div>
+
+        <!-- dropdownsmenustart from here please -->
+        <div id="clickWomen" onmouseleave="remFirst(this)">
+            <ul class="list1">
+
+                <li><span>Jwellery</span></li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+            </ul>
+            <ul class="list1">
+                <li><span>Jwellery</span></li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+            </ul>
+            <ul class="list1">
+                <li><span>Jwellery</span></li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+            </ul>
+            <ul class="list1">
+                <li><span>Jwellery</span></li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+            </ul>
+            <ul class="list1">
+                <li><span>Jwellery</span></li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+            </ul>
+            <ul class="list1">
+                <li><span>Jwellery</span></li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+            </ul>
+            <ul class="list1">
+                <li><span>Jwellery</span></li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+            </ul>
+            <ul class="list1">
+                <li><span>Jwellery</span></li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+                <li>Jwellery</li>
+            </ul>
+            <div class="images">
+                <img src="homeimg.jpg" width="250px"alt="">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        
+    </nav>
+        <div class="home">
+           
+
+        </div>
+    
+
+
+    <hr>
+    <!-- HEreBoot -->
+    <div class="container my-4">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="this1.jpg" class="d-block" width="1850px" height="600px" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="this2.jpg" class="d-block"width="1850px" height="600px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="this3.jpg" class="d-block"width="1850px" height="600px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="this4.jpg" class="d-block"width="1350px" height="600px" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    
+
+
+<hr>
+
+    <h1 class="titel" id="Makeup">Makeup Items</h1>
+<hr>
+        <div class="items">
+            <div class="item">
+                <img src="item1.jpg" width="250px" height="300px" alt="">
+            </div>
+            <div class="item">
+                <img src="item5.jpg" width="250px" height="300px" alt="">
+            </div>
+
+            <div class="item">
+                <img src="item2.jpg" width="250px" height="300px" alt="">
+            </div>
+
+            <div class="item">
+                <img src="item3.jpg" width="250px" height="300px" alt="">
+            </div>
+
+            <div class="item">
+                <img src="item4.jpg" width="250px" height="300px" alt="">
+            </div>
+
+            <div class="item">
+                <img src="item6.jpg" width="250px" height="300px" alt="">
+            </div>
+
+            <div class="item">
+                <img src="item7.jpg" width="250px" height="300px" alt="">
+            </div>
+
+            <div class="item">
+                <img src="item8.jpg" width="250px" height="300px" alt="">
+            </div>
+
+            <div class="item">
+                <img src="item9.jpg" width="250px" height="300px" alt="">
+            </div>
+            <div class="item">
+                <img src="item10.jpg" width="250px" height="300px" alt="">
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+<hr>
+
+
+        <h1 class="titel" id="Jwellery">Jwellery Collections</h1>
+        <div class="items">
+            <div class="item">
+                <img src="jwel1.jpeg" width="250px" height="300px" alt="">
+            </div>
+            <div class="item">
+                <img src="jwel2.jpeg" width="250px" height="300px" alt="">
+            </div>
+
+            <div class="item">
+                <img src="jwel3.jpeg" width="250px" height="300px" alt="">
+            </div>
+
+            <div class="item">
+                <img src="jwel4.jpeg" width="250px" height="300px" alt="">
+            </div>
+
+            <div class="item">
+                <img src="jwel5.jpeg" width="250px" height="300px" alt="">
+            </div>
+
+            <div class="item">
+                <img src="jwel6.jpeg" width="250px" height="300px" alt="">
+            </div>
+
+            <div class="item">
+                <img src="jwel7.jpeg" width="250px" height="300px" alt="">
+            </div>
+
+            <div class="item">
+                <img src="jwel8.jpeg" width="250px" height="300px" alt="">
+            </div>
+
+            <div class="item">
+                <img src="jwel9.jpeg" width="250px" height="300px" alt="">
+            </div>
+            <div class="item">
+                <img src="jwel10.jpeg" width="250px" height="300px" alt="">
+            </div>
+
+
+
+
+            
+
+
+
+
+        </div>
+            
+   <hr>
+   
+   <h1 class="titel" id="Offers">Special Offers</h1>
+   <div class="items">
+       <div class="item">
+           <img src="disc1.jpeg" width="250px" height="300px" alt="">
+       </div>
+       <div class="item">
+           <img src="disc2.jpeg" width="250px" height="300px" alt="">
+       </div>
+
+       <div class="item">
+           <img src="disc3.jpeg" width="250px" height="300px" alt="">
+       </div>
+
+       <div class="item">
+           <img src="disc4.jpeg" width="250px" height="300px" alt="">
+       </div>
+
+       <div class="item">
+           <img src="disc5.jpeg" width="250px" height="300px" alt="">
+       </div>
+
+       <div class="item">
+           <img src="disc6.jpeg" width="250px" height="300px" alt="">
+       </div>
+
+       <div class="item">
+           <img src="disc7.jpeg" width="250px" height="300px" alt="">
+       </div>
+
+       <div class="item">
+           <img src="disc8.jpeg" width="250px" height="300px" alt="">
+       </div>
+
+       <div class="item">
+           <img src="disc9.jpeg" width="250px" height="300px" alt="">
+       </div>
+       <div class="item">
+        <img src="disc10.jpeg" width="250px" height="300px" alt="">
+    </div>
+    
+
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    </div>
+    
+    <hr>
+
+    <h1 class="titel" id="Makeup">Bridal Makeup</h1>
+    <div class="items">
+        <div class="item">
+            <img src="pro1.jpg" width="250px" height="300px" alt="">
+        </div>
+        <div class="item">
+            <img src="pro2.jpg" width="250px" height="300px" alt="">
+        </div>
+ 
+        <div class="item">
+            <img src="pro3.jpg" width="250px" height="300px" alt="">
+        </div>
+ 
+        <div class="item">
+            <img src="pro4.jpg" width="250px" height="300px" alt="">
+        </div>
+ 
+        <div class="item">
+            <img src="pro5.jpg" width="250px" height="300px" alt="">
+        </div>
+ 
+        <div class="item">
+            <img src="pro6.jpg" width="250px" height="300px" alt="">
+        </div>
+ 
+        <div class="item">
+            <img src="pro7.jpg" width="250px" height="300px" alt="">
+        </div>
+ 
+        <div class="item">
+            <img src="pro8.jpg" width="250px" height="300px" alt="">
+        </div>
+        <div class="item">
+            <img src="pro9.jpg" width="250px" height="300px" alt="">
+        </div>
+        <div class="item">
+            <img src="pro10.jpg" width="250px" height="300px" alt="">
+        </div>
+    
+       
+
+
+
+
+   </div>
+<div class="contact"></div>
+
+
+    <footer>
+        <span> &copy; Copyright By <span><a href="https://github.com/sachinb2010">Sachin</a></span></span>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
